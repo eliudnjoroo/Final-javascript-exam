@@ -40,16 +40,16 @@ async function poke(url) {
   let t4;
   let id = setInterval (()=> {
     t1 = setTimeout(function() {
-      cont.innerHTML = `<p>loading img.</p>`
+      cont.innerHTML = `<p>loading info.</p>`
     }, 200);
     t2 = setTimeout(function() {
-      cont.innerHTML = `<p>loading img..</p>`
+      cont.innerHTML = `<p>loading info..</p>`
     }, 400);
     t3 = setTimeout(function() {
-      cont.innerHTML = `<p>loading img...</p>`
+      cont.innerHTML = `<p>loading info...</p>`
     }, 600);
     t4 = setTimeout(function() {
-      cont.innerHTML = `<p>loading img....</p>`
+      cont.innerHTML = `<p>loading info....</p>`
     }, 800);
   }, 1000);
   cont.innerHTML = `<img hidden src="${mysrc}" id="sprite">`
