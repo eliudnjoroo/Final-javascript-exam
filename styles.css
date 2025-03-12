@@ -1,0 +1,72 @@
+body{
+  padding: 0;
+  margin : 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color : violet;
+}
+
+div, button, input{
+  min-height : 20px;
+  padding: 5px 10px;
+  margin : 5px auto;
+  border-radius : 15px;
+  border: 2px solid red;
+}
+div {
+  background-color: black;
+  min-width: 50vw;
+  color: white;
+  font-size: 1.5em;
+}
+input{
+  background-color: lightgreen;
+  min-width : 70vw;
+  color : darkblue;
+  text-align : center ;
+  font-size : 2em;
+}
+button{
+  font-size: 2em;
+  min-width : 15vw;
+  color : lightgreen;
+  background-color: darkblue;
+  border: none;
+}
+@keyframes shrink{
+  0%{
+    transform : scale(1)
+  }
+  50%{
+    transform : scale(0.8)
+  }
+  100%{
+    transform : scale(1) 
+  }
+}
+.anim:hover {
+  animation : shrink 0.5s linear;
+}
+#cont{
+  display : flex;
+  justify-content : center ;
+  align-items:center ;
+  height: 40vw;
+  background-color: transparent;
+  margin: 5px auto;
+  border : none ;
+}
+#sprite{
+  margin : auto;
+  height : 40vw;
+}
+.type {
+  min-width : 10px;
+  height :25px;
+  font-size : 0.9em;
+  background-color : red;
+  color : white;
+  margin : 2px;
+  padding : 2px 4px;
+}
