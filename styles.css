@@ -13,17 +13,28 @@ div, button, input{
   margin : 5px auto;
   border-radius : 15px;
   border: 2px solid red;
+  text-align: center;
 }
 div {
   background-color: black;
-  min-width: 50vw;
+  min-width: 0vw;
   color: white;
   font-size: 1.5em;
+  overflow: hidden;
+  transition: all 1s;
 }
-input{
-  background-color: lightgreen;
+h2{
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  width: 80vw;
+  border-radius:20px;
+  text-align: center;
+  margin: 5px auto;
+  margin-top: 50px;
+}
+#search-input{
   min-width : 70vw;
-  color : darkblue;
   text-align : center ;
   font-size : 2em;
 }
@@ -52,15 +63,22 @@ button{
   display : flex;
   justify-content : center ;
   align-items:center ;
-  height: 40vw;
+  height: 0vw;
   background-color: transparent;
   margin: 5px auto;
   border : none ;
+  overflow: hidden;
+  transition: all 2s;
+  flex-direction: column;
 }
-#sprite{
+#sprite2{
   margin : auto;
   height : 40vw;
 }
+span{
+  margin: 5 auto;
+}
+
 .type {
   min-width : 10px;
   height :25px;
