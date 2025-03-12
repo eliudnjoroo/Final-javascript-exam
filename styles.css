@@ -85,6 +85,6 @@ span{
   font-size : 0.9em;
   background-color : red;
   color : white;
-  margin : 2px;
+  margin : 2px auto;
   padding : 2px 4px;
 }
