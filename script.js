@@ -31,9 +31,6 @@ async function poke(url) {
     location.reload();
   }
   pName.textContent = "pokemon-name: "+pData.name.toUpperCase();
-  pId.textContent = "pokemon-id: #"+pData.id
-  height.textContent = "height: "+pData.height
-  weight.textContent = "weight: "+pData.weight
   const sprite = pData.sprites
   let mysrc = sprite.front_default;
 
@@ -66,6 +63,9 @@ async function poke(url) {
       clearInterval(id);
       div.forEach(d => d.style.minWidth = "40vw");
       setTimeout(()=> {
+        pId.textContent = "pokemon-id: #"+pData.id
+        height.textContent = "height: "+pData.height
+        weight.textContent = "weight: "+pData.weight
         myTypes(pData.types)
         stats(pData.stats);
         cont.innerHTML = `<img src="${mysrc}" id="sprite2">`;
