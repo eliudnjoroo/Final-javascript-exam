@@ -80,11 +80,16 @@ span{
 }
 
 .type {
+  display: inline-block;
   min-width : 10px;
   height :25px;
   font-size : 0.9em;
   background-color : red;
   color : white;
-  margin : 2px auto;
+  margin : 2px 2px;
   padding : 2px 4px;
+}
+.tcont {
+  background-color: transparent;
+  border: none;
 }
